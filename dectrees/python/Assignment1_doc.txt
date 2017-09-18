@@ -1,0 +1,22 @@
+Q0: Kolla upp närmare, intuitivt känns det som att om två atribut är lika varandra så blir det svårare. samma om en eller flera har ett konstant värde. sämst är nog om dom varierar men alltid är lika varandra.
+
+		   entropy 				 0<=Entropy(S)<=1
+Q1: Monk1: 1.0
+	Monk2: 0.957117428264771
+	Monk3: 0.9998061328047111
+
+
+Q2: Läs på om entropy i boken
+
+
+
+
+			Information Gain
+Q3: Monk1: [0.07527255560831925,0.005838429962909286,0.00470756661729721,0.02631169650768228, 	     	 0.28703074971578435, 0.0007578557158638421]
+
+	Monk2: [0.0037561773775118823, 0.0024584986660830532, 0.0010561477158920196, 0.015664247292643818, 0.01727717693791797, 0.006247622236881467]
+
+	Monk3: [0.007120868396071844, 0.29373617350838865, 0.0008311140445336207, 0.002891817288654397, 0.25591172461972755, 0.007077026074097326]
+
+
+Q4: Vill minimera Entropy(S_k) genom att ha så skev fördelningen som möjligt, tex alla i en klass skulle sätta den till 0 vilket skulle maximera gainen. Samtidigt vill vi att antalet observationer med atribut A = k ska vara få i förhållande till alla observationer.  
