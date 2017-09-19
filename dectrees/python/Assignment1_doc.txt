@@ -6,7 +6,7 @@ Q1: Monk1: 1.0
 	Monk3: 0.9998061328047111
 
 
-Q2: Läs på om entropy i boken
+Q2: A less complex model might give a lower variance at the cost of bias.
 
 
 
@@ -20,3 +20,7 @@ Q3: Monk1: [0.07527255560831925,0.005838429962909286,0.00470756661729721,0.02631
 
 
 Q4: Vill minimera Entropy(S_k) genom att ha så skev fördelningen som möjligt, tex alla i en klass skulle sätta den till 0 vilket skulle maximera gainen. Samtidigt vill vi att antalet observationer med atribut A = k ska vara få i förhållande till alla observationer.  
+
+Q5:
+
+Q6: A less complex model (after pruning) might give a lower variance at the cost of some bias.

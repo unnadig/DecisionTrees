@@ -1,6 +1,8 @@
+
 import monkdata as m
 import dtree as dtree
 import drawtree_qt5 as dt
+import random
 
 monk1 = m.monk1
 monk2 = m.monk2
@@ -62,7 +64,16 @@ monk2_tree = dtree.buildTree(monk2,m.attributes)
 monk3_tree = dtree.buildTree(monk3,m.attributes)
 #graf3 = dt.drawTree(monk3_tree)
 
+print(dtree.check(monk1_tree, m.monk1))
 print(dtree.check(monk1_tree, m.monk1test))
 print(dtree.check(monk2_tree, m.monk2test))
 print(dtree.check(monk3_tree, m.monk3test))
 
+def partition(data,fraction):
+	ldata = list(data)
+	random.shuffle(ldata)
+	breakPoint = int(len(ldata) * fraction)
+	return ldata[:breakPoint], ldata[breakpoint:]
+
+print(dtree.allPruned(monk1_tree))
+dt.drawTree(dtree.allPruned()[1])
