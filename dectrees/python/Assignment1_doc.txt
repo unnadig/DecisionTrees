@@ -6,7 +6,8 @@ Q1: Monk1: 1.0
 	Monk3: 0.9998061328047111
 
 
-Q2: A less complex model might give a lower variance at the cost of bias.
+Q2: For a uniform distribution the entropy is high. This is because in a uniform distribution all outcomes are equally likely, so prior to a run of the model there is a lot of uncertainty of what the outcome will be, e.g. high entropy. Conversely, for a distribution where some of the events are more likely to occur than others the entropy is lower, since it is easier to make a prediction about outcomes of such a distribution.
+A simple example of a high entropy distribution is the discrete uniform distribution which has Entropy = log_2(n) ; n = number of outcomes. A low entropy distribution is as previously mentioned, any substatntially skewed distribution. For example, a Bernouilli distribution with a high probability parameter p.
 
 
 
@@ -21,6 +22,12 @@ Q3: Monk1: [0.07527255560831925,0.005838429962909286,0.00470756661729721,0.02631
 
 Q4: Vill minimera Entropy(S_k) genom att ha så skev fördelningen som möjligt, tex alla i en klass skulle sätta den till 0 vilket skulle maximera gainen. Samtidigt vill vi att antalet observationer med atribut A = k ska vara få i förhållande till alla observationer.  
 
-Q5:
+Low entropy implies high mutual information. We should therefore choose to split on an attribute that is the most relevant for our data set.
 
-Q6: A less complex model (after pruning) might give a lower variance at the cost of some bias.
+Q5: As we guessed, the MONK-2 data set was the most difficult for our decision tree to classify. This is most likely because that data set is defined as exactly two attributes taking on the same values. Such a pattern is much harder to generlize than the patterns in the other two data sets.
+
+Q6: 
+"The bias is error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
+The variance is error from sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting)." - Wikipedia
+
+From this it's clear that pruning reduces variance, at the cost of higher bias. 
